@@ -1,4 +1,4 @@
-# custom frontend for (nekoweb cafe)
+# custom frontend for [nekoweb cafe](https://social.nekoweb.org)
 run:
 ```
 npm i
