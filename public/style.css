@@ -1,0 +1,90 @@
+* {
+    font-family: "MS UI Gothic", "MS PGothic", sans-serif;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(52, 48, 58);
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.sidebar {
+    border-color: rgb(193, 160, 255);
+    max-width: 200px;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 350px;
+}
+
+.post-user, .profile-user {
+    font-weight: bold;
+}
+
+.post-pfp, .profile-pfp {
+    height: 60px;
+    width: 60px;
+    margin-top: -2em;
+    border: 1px solid white;
+    padding: 2px;
+    background: rgb(52, 48, 58);
+}
+
+.button {
+    width: 100%;
+    background: rgb(52, 48, 58);
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(201, 153, 255);
+    cursor: pointer;
+}
+
+.pages {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+a {
+    color: rgb(119, 205, 255);
+}
+
+.post a {
+    color: white;
+    text-decoration: none;
+}
+
+.lessgap {
+    gap: 10px;
+}
+
+.box {
+    border-style: solid;
+    border-width: 1px 1px 1px 4px;
+    padding: 10px;
+    overflow-wrap: anywhere;
+}

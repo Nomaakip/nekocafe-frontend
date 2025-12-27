@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        <img src="/img/logo.png" alt="logo">
+        <div class="wrapper">
+            <div class="sidebar box">
+                <img src="<%= profileRes.image_url %>" alt="pfp" class="profile-pfp">
+                <span class="profile-user"><%= profileRes.username %></span>
+                <div class="profile-bio"><%= profileRes.bio %></div>
+            </div>
+            <div class="posts lessgap">
+                <div class="post">
+                    <%- include('partials/post', { post: postRes }) %>
+                </div>
+                <p>Comments </p>
+                <div class="comments">
+                    <% if (commentsRes.length > 0) { %>
+                        <% commentsRes.forEach((post) => { %>
+                            <%- include('partials/post', { post }) %>
+                        <% }); %>
+                    <% } else { %>
+                        <p>No comments...</p>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

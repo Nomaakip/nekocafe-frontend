@@ -1,0 +1,13 @@
+<% const color = colors[Math.floor(Math.random() * colors.length)] %>     
+<div class="post box" style="border-color: rgb(<%= color[0] %>, <%= color[1] %>, <%= color[2] %>);" id="<%= post.id %>">
+    <a href="/profile/<%= post.name %>">
+        <img src="<%= post.image %>" alt="pfp" class="post-pfp">
+        <span class="post-user"><%= post.name %></span>
+    </a>
+
+    <a href="/post/<%= post.id %>">
+        <div class="post-info">
+            <span class="post-content"><%= post.post %></span>
+        </div>
+    </a>
+</div>
